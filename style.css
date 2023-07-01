@@ -40,8 +40,8 @@
     /* Styles for small screens */
     margin: 10% auto;
     padding: 20px;
-    width: 60%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
   }
 
   @media (min-width: 800px) {
