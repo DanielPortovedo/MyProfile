@@ -1,1 +1,608 @@
-<h1>Daniel Portovedo</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title id="title">Daniel Portovedo - Portofolio</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body class="text-gray-500">
+    <header>
+      <!--Upper footer-->
+      <nav class="py-2 sticky top-0 z-50">
+        <div class="container mx-auto relative">
+          <nav class="flex flex-wrap items-center px-4">
+            <!--Home Button-->
+            <a
+              href="#"
+              class="font-bold font-serif hover:text-opacity-75 inline-flex items-center leading-none mr-4 space-x-1 text-black text-xl uppercase"
+            >
+              <span>Daniel</span>
+            </a>
+
+            <!--Responsive 3 slashes menu-->
+            <button
+              class="hover:bg-secondary-500 hover:text-white ml-auto px-3 py-2 rounded text-secondary-500 lg:hidden"
+              data-name="nav-toggler"
+              data-pg-ia='{"l":[{"name":"NabMenuToggler","trg":"click","a":{"l":[{"t":"^nav|[data-name=nav-menu]","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"hidden"}}]},{"t":"#gt# span:nth-of-type(1)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":45,"yPercent":300}}]},{"t":"#gt# span:nth-of-type(2)","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":0}}]},{"t":"#gt# span:nth-of-type(3)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":-45,"yPercent":-300}}]}]},"pdef":"true","trev":"true"}]}'
+              data-pg-ia-apply="$nav [data-name=nav-toggler]"
+            >
+              <span class="block border-b-2 border-current my-1 w-6"></span>
+              <span class="block border-b-2 border-current my-1 w-6"></span>
+              <span class="block border-b-2 border-current my-1 w-6"></span>
+            </button>
+
+            <div
+              class="flex-1 hidden space-y-2 w-full lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto"
+              data-name="nav-menu"
+            >
+              <!--Navigation Menu-->
+              <div class="flex flex-col mx-auto lg:flex-row">
+                <a
+                  id="home"
+                  href="#"
+                  class="hover:text-gray-400 lg:p-4 py-2 text-gray-500"
+                  >Home</a
+                >
+                <a
+                  id="about"
+                  href="#AboutSection"
+                  class="hover:text-gray-400 lg:p-4 py-2 text-gray-500"
+                  >About</a
+                >
+                <a
+                  id="works"
+                  href="#ProjectsSection"
+                  class="hover:text-gray-400 lg:p-4 py-2 text-gray-500"
+                  >Projects</a
+                >
+                <a
+                  id="contact"
+                  href="#footer"
+                  class="hover:text-gray-400 lg:p-4 py-2 text-gray-500"
+                  >Contact</a
+                >
+              </div>
+
+              <!--Language Selector-->
+              <div class="flex flex-col mx-auto lg:flex-row">
+                <button
+                  id="BtnPT"
+                  onclick="changeLanguage('PT')"
+                  class="hover:text-gray-400 text-gray-500"
+                >
+                  PT
+                </button>
+                <strong class="px-1.5 text-gray-50">&nbsp;|&nbsp;</strong>
+                <button
+                  id="BtnEN"
+                  onclick="changeLanguage('EN')"
+                  class="hover:text-gray-400 text-gray-500"
+                >
+                  EN
+                </button>
+                <strong class="px-1.5 text-gray-50">&nbsp;|&nbsp;</strong>
+                <button
+                  id="BtnFR"
+                  onclick="changeLanguage('FR')"
+                  class="hover:text-gray-400 text-gray-500"
+                >
+                  FR
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="FotoSection" class="bg-gray-100 relative text-center">
+        <div class="container mx-auto px-4 py-24">
+          <div
+            class="-mx-4 flex flex-wrap items-center justify-center space-y-6 lg:space-y-0"
+          >
+            <div class="px-4 w-full md:w-10/12 xl:w-7/12">
+              <!--Foto-->
+              <img
+                class="bg-white inline-flex mb-6 p-2 rounded-full shadow-xl w-1/2"
+                alt="..."
+                width="800"
+                height="800"
+                src="./imgs/foto.jpeg"
+              />
+
+              <!--Introduction Title-->
+              <h1
+                id="IntroductionTitle"
+                class="font-bold mb-2 text-4xl text-gray-900 md:leading-tight lg:leading-tight lg:text-5xl"
+              >
+                Simple informatics Engineer with a passion for Cybersecurity.
+              </h1>
+
+              <!--Introduction Subtitle-->
+              <p id="IntroudctionSubTitle" class="mb-6">
+                Welcome to my online portfolio. Here, you're going to find some
+                of my projects, achievements, and professional experiences. You
+                will also get to know some of my technical and administrative
+                skills, interests, and hobbies.
+              </p>
+
+              <!--Social Networks-->
+              <div class="flex-wrap inline-flex space-x-2">
+                <a
+                  href="https://www.instagram.com/daniel_portovedo_01/"
+                  aria-label="instagram"
+                  class="bg-primary-500 hover:bg-primary-600 p-2 rounded-full text-white"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                    <path
+                      d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/daniel-portovedo-9a265721b/"
+                  aria-label="linkedin"
+                  class="bg-primary-500 hover:bg-primary-600 p-2 rounded-full text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/DanielPortovedo"
+                  aria-label="github"
+                  class="bg-primary-500 hover:bg-primary-600 p-2 rounded-full text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="h-5 w-5"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="AboutSection" class="py-24 text-gray-500">
+        <div class="container mx-auto px-4 relative">
+          <div class="flex flex-wrap -mx-4 items-center">
+            <div class="p-4 w-full lg:w-4/12">
+              <img
+                src="https://images.unsplash.com/photo-1613909207039-6b173b755cc1?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDV8fGRlc2lnbmVyfGVufDB8fHx8MTYzMjg2OTMwMA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=800&h=1000&fit=crop"
+                class="rounded-xl w-full"
+                alt="..."
+                width="600"
+                height="650"
+              />
+            </div>
+            <div class="p-4 w-full lg:w-8/12">
+              <h2 class="font-medium mb-2">A Little</h2>
+
+              <h3
+                id="AboutMeSection"
+                class="font-bold mb-2 text-5xl text-primary-500"
+              >
+                About Me
+              </h3>
+
+              <p class="mb-6">
+                I'm a simple person called Daniel Portovedo. I am currently 22
+                years old and live in Switzerland, but I lived in Portugal for
+                21 years. I have a Bachelor's degree in informatics engineering
+                from the University of Coimbra, and I'm currently taking a
+                master's in cybersecurity, also from the University of Coimbra.
+                I currently possess around 1 year of professional experience
+                where I worked as a software developer for Critical Software and
+                as a researcher for the University of Coimbra. Right now, I'm
+                doing an internship at CERN.
+              </p>
+              <div class="-mx-2 flex flex-wrap mb-6">
+                <div class="p-2 w-full sm:w-4/12">
+                  <div class="bg-gray-50 p-6 rounded-xl shadow">
+                    <h2
+                      class="font-bold mb-1 text-5xl text-primary-500 xl:text-6xl"
+                    >
+                      1
+                    </h2>
+                    <h3 class="font-bold text-secondary-500">
+                      Years of Experience
+                    </h3>
+                  </div>
+                </div>
+                <div class="p-2 w-full sm:w-4/12">
+                  <div class="bg-gray-50 p-6 rounded-xl shadow">
+                    <h2
+                      class="font-bold mb-1 text-5xl text-primary-500 xl:text-6xl"
+                    >
+                      10+
+                    </h2>
+                    <h3 class="font-bold text-secondary-500">
+                      Projects Completed
+                    </h3>
+                  </div>
+                </div>
+                <div class="p-2 w-full sm:w-4/12">
+                  <div class="bg-gray-50 p-6 rounded-xl shadow">
+                    <h2
+                      class="font-bold mb-1 text-5xl text-primary-500 xl:text-6xl"
+                    >
+                      12
+                    </h2>
+                    <h3 class="font-bold text-secondary-500">
+                      Industry Awards
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                onclick="showFullStory()"
+                class="bg-primary-500 hover:bg-primary-400 inline-block px-6 py-2 rounded text-white"
+              >
+                Full Story
+              </button>
+              <button
+                onclick="showCV()"
+                class="bg-primary-500 hover:bg-primary-400 inline-block px-6 py-2 rounded text-white"
+              >
+                CV
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Small ruller and pencil-->
+      <div class="container mx-auto">
+        <div class="lg:mx-auto lg:w-7/12">
+          <div class="flex items-center nowrap">
+            <div
+              class="bg-primary-500 flex-grow h-px max-w-full opacity-25"
+            ></div>
+            <div class="px-10 w-auto">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="h-10 text-primary-500 w-10"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M7.05 14.121L4.93 16.243l2.828 2.828L19.071 7.757 16.243 4.93 14.12 7.05l1.415 1.414L14.12 9.88l-1.414-1.415-1.414 1.415 1.414 1.414-1.414 1.414-1.414-1.414-1.415 1.414 1.415 1.414-1.415 1.415L7.05 14.12zm9.9-11.313l4.242 4.242a1 1 0 0 1 0 1.414L8.464 21.192a1 1 0 0 1-1.414 0L2.808 16.95a1 1 0 0 1 0-1.414L15.536 2.808a1 1 0 0 1 1.414 0zM14.12 18.363l1.415-1.414 2.242 2.243h1.414v-1.414l-2.242-2.243 1.414-1.414L21 16.757V21h-4.242l-2.637-2.637zM5.636 9.878L2.807 7.05a1 1 0 0 1 0-1.415l2.829-2.828a1 1 0 0 1 1.414 0L9.88 5.635 8.464 7.05 6.343 4.928 4.929 6.343l2.121 2.12-1.414 1.415z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-primary-500 flex-grow h-px max-w-full opacity-25"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <section id="ProjectsSection" class="py-24 text-gray-500">
+        <div class="container mx-auto px-4 relative">
+          <div class="mb-12">
+            <h2 class="font-medium mb-2 text-gray-600">
+              Some Of My Recent Projects
+            </h2>
+            <h3 class="font-bold text-5xl text-primary-500">Works</h3>
+          </div>
+          <div class="-mx-4 flex flex-wrap">
+            <div class="mb-12 px-4 w-full md:w-6/12">
+              <a class="block group rounded-lg" href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDUyfHxkZXNpZ25lcnxlbnwwfHx8fDE2MzI4Njk1ODY&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=650&fit=crop"
+                  class="group-hover:opacity-80 mb-6 rounded-xl"
+                />
+                <h4 class="font-bold mb-2 text-gray-900 text-xl">Project 1</h4>
+                <p>App Development</p>
+              </a>
+            </div>
+            <div class="mb-12 px-4 w-full md:-mt-24 md:w-6/12">
+              <a class="block group rounded-lg" href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1605067063351-f81bc6041251?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDU3fHxkZXNpZ25lcnxlbnwwfHx8fDE2MzI4Njk1ODY&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=650&fit=crop"
+                  class="group-hover:opacity-80 mb-6 rounded-xl"
+                />
+                <h4 class="font-bold mb-2 text-gray-900 text-xl">Project 2</h4>
+                <p>Branding</p>
+              </a>
+            </div>
+            <div class="mb-12 px-4 w-full md:w-6/12">
+              <a class="block group rounded-lg" href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDY3fHx3ZWJzaXRlfGVufDB8fHx8MTYzMjg3MjE0OQ&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=650&fit=crop"
+                  class="group-hover:opacity-80 mb-6 rounded-xl"
+                />
+                <h4 class="font-bold mb-2 text-gray-900 text-xl">Project 3</h4>
+                <p>Web &amp; App Development</p>
+              </a>
+            </div>
+            <div class="mb-12 px-4 w-full md:-mt-24 md:w-6/12">
+              <a class="block group rounded-lg" href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDUyfHxkZXNpZ25lcnxlbnwwfHx8fDE2MzI4Njk1ODY&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=650&fit=crop"
+                  class="group-hover:opacity-80 mb-6 rounded-xl"
+                />
+                <h4 class="font-bold mb-2 text-gray-900 text-xl">Project 4</h4>
+                <p>Web &amp; App Development</p>
+              </a>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="bg-primary-500 hover:bg-primary-400 inline-block px-6 py-2 rounded text-white"
+            >View All</a
+          >
+        </div>
+      </section>
+
+      <!--Small ruller and pencil-->
+      <div class="container mx-auto">
+        <div class="lg:mx-auto lg:w-7/12">
+          <div class="flex items-center nowrap">
+            <div
+              class="bg-primary-500 flex-grow h-px max-w-full opacity-25"
+            ></div>
+            <div class="px-10 w-auto">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="h-10 text-primary-500 w-10"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M7.05 14.121L4.93 16.243l2.828 2.828L19.071 7.757 16.243 4.93 14.12 7.05l1.415 1.414L14.12 9.88l-1.414-1.415-1.414 1.415 1.414 1.414-1.414 1.414-1.414-1.414-1.415 1.414 1.415 1.414-1.415 1.415L7.05 14.12zm9.9-11.313l4.242 4.242a1 1 0 0 1 0 1.414L8.464 21.192a1 1 0 0 1-1.414 0L2.808 16.95a1 1 0 0 1 0-1.414L15.536 2.808a1 1 0 0 1 1.414 0zM14.12 18.363l1.415-1.414 2.242 2.243h1.414v-1.414l-2.242-2.243 1.414-1.414L21 16.757V21h-4.242l-2.637-2.637zM5.636 9.878L2.807 7.05a1 1 0 0 1 0-1.415l2.829-2.828a1 1 0 0 1 1.414 0L9.88 5.635 8.464 7.05 6.343 4.928 4.929 6.343l2.121 2.12-1.414 1.415z"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-primary-500 flex-grow h-px max-w-full opacity-25"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!--Skills-->
+      <section class="py-24">
+        <div class="container mx-auto px-4">
+          <div class="mb-6">
+            <h2 class="font-medium mb-1">A few skills of mine</h2>
+            <h3 class="font-bold text-5xl text-primary-500">Skills</h3>
+          </div>
+          <div class="flex flex-wrap -mx-4 justify-center">
+            <div class="pb-4 pt-12 px-4 w-full md:w-6/12 lg:w-4/12">
+              <div class="border pb-6 pt-2 px-6 rounded-xl shadow">
+                <img
+                  src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDE5fHxkb2d8ZW58MHx8fA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop"
+                  class="-mt-12 mb-4 rounded-xl"
+                  alt="..."
+                  width="100"
+                  height="100"
+                />
+                <h3 class="font-bold text-2xl text-gray-900">Dianne Russell</h3>
+                <h4 class="font-medium mb-3">Founder</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices
+                  sit amet. Aenean elementum, erat at aliquet hendrerit, elit
+                  nisl posuere tortor.
+                </p>
+              </div>
+            </div>
+            <div class="pb-4 pt-12 px-4 w-full md:w-6/12 lg:w-4/12">
+              <div class="border pb-6 pt-2 px-6 rounded-xl shadow">
+                <img
+                  src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDd8fGNhdHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop"
+                  class="-mt-12 mb-4 rounded-xl"
+                  alt="..."
+                  width="100"
+                  height="100"
+                />
+                <h3 class="font-bold text-2xl text-gray-900">Kathryn Murphy</h3>
+                <h4 class="font-medium mb-3">Chief Technology Officer</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices
+                  sit amet. Aenean elementum, erat at aliquet hendrerit, elit
+                  nisl posuere tortor.
+                </p>
+              </div>
+            </div>
+            <div class="pb-4 pt-12 px-4 w-full md:w-6/12 lg:w-4/12">
+              <div class="border pb-6 pt-2 px-6 rounded-xl shadow">
+                <img
+                  src="https://images.unsplash.com/photo-1517101724602-c257fe568157?ixid=MXwyMDkyMnwwfDF8c2VhcmNofDZ8fHBhcnJvdHxlbnwwfHx8&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=400&h=400&fit=crop"
+                  class="-mt-12 mb-4 rounded-xl"
+                  alt="..."
+                  width="100"
+                  height="100"
+                />
+                <h3 class="font-bold text-2xl text-gray-900">
+                  Darrell Steward
+                </h3>
+                <h4 class="font-medium mb-3">Administrative Manager</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices
+                  sit amet. Aenean elementum, erat at aliquet hendrerit, elit
+                  nisl posuere tortor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-gray-900 bg-opacity-90 py-12 text-gray-400">
+      <div class="container mx-auto px-4 relative">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="mr-auto p-4 w-full md:w-9/12 lg:w-8/12 xl:w-6/12">
+            <h2 class="font-bold font-serif mb-4 text-3xl text-white">
+              Interested To Work Together?
+            </h2>
+            <p>
+              Please contact me via email or social networks. I will try to get
+              back to you as soon as possible.
+            </p>
+          </div>
+        </div>
+        <hr class="my-8 opacity-25" />
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="p-4 w-full sm:w-6/12 lg:w-3/12 xl:w-4/12">
+            <a
+              href="#"
+              class="font-bold font-serif hover:text-opacity-90 inline-flex items-center leading-none space-x-2 text-3xl text-primary-500 uppercase"
+            >
+              <span>Daniel Portovedo</span>
+            </a>
+          </div>
+          <div class="p-4 w-full sm:w-6/12 lg:flex-1 lg:order-last">
+            <div class="flex-wrap inline-flex leading-none space-x-2">
+              <a
+                href="https://www.instagram.com/daniel_portovedo_01/"
+                aria-label="instagram"
+                class="bg-primary-500 hover:bg-primary-600 p-2 rounded-full text-white"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                  <path
+                    d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/daniel-portovedo-9a265721b/"
+                aria-label="linkedin"
+                class="bg-primary-500 hover:bg-primary-600 p-2 rounded-full text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="h-5 w-5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/DanielPortovedo"
+                aria-label="github"
+                class="bg-primary-500 hover:bg-primary-600 p-2 rounded-full text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="h-5 w-5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 w-full sm:w-6/12 md:flex-1 lg:w-3/12">
+            <a
+              href="mailto:daniel.g.portovedo@gmail.com"
+              class="hover:text-gray-400 text-white text-xl"
+              >daniel.g.portovedo@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal-full-story" class="modal-full-story">
+      <div class="modal-content-full-story rounded-xl w-full">
+        <!--Small ruller and pencil-->
+        <div class="container mx-auto">
+          <div class="lg:mx-auto lg:w-7/12">
+            <div class="flex items-center nowrap">
+              <div
+                class="bg-primary-500 flex-grow h-px max-w-full opacity-25"
+              ></div>
+              <div class="px-10 w-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="h-10 text-primary-500 w-10"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M7.05 14.121L4.93 16.243l2.828 2.828L19.071 7.757 16.243 4.93 14.12 7.05l1.415 1.414L14.12 9.88l-1.414-1.415-1.414 1.415 1.414 1.414-1.414 1.414-1.414-1.414-1.415 1.414 1.415 1.414-1.415 1.415L7.05 14.12zm9.9-11.313l4.242 4.242a1 1 0 0 1 0 1.414L8.464 21.192a1 1 0 0 1-1.414 0L2.808 16.95a1 1 0 0 1 0-1.414L15.536 2.808a1 1 0 0 1 1.414 0zM14.12 18.363l1.415-1.414 2.242 2.243h1.414v-1.414l-2.242-2.243 1.414-1.414L21 16.757V21h-4.242l-2.637-2.637zM5.636 9.878L2.807 7.05a1 1 0 0 1 0-1.415l2.829-2.828a1 1 0 0 1 1.414 0L9.88 5.635 8.464 7.05 6.343 4.928 4.929 6.343l2.121 2.12-1.414 1.415z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="bg-primary-500 flex-grow h-px max-w-full opacity-25"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <h3
+          id="AboutMeSection"
+          class="font-bold mb-2 text-5xl text-primary-500"
+        >
+          Full Story
+        </h3>
+        <p class="pt-2 full-story-p">
+          I was born on July 9, 2001 in Coimbra, Portugal. Since I was 7 years
+          old, I always told my parents, "When I grow up, I want to be a
+          computer engineer." Obviously, I had the typical childhood desires of
+          being a firefighter, police officer, football player, and so on. But
+          from an early age, my goals began to take shape, and it's a good
+          quality of mine to stay firm in my principles and desires. The years
+          went by, and my desire to program kept growing until I had my first
+          experience with software to develop a small Mario-style game. Years
+          later, I had my first experience with pure programming, where a
+          colleague and I developed a purely visual operating system that
+          closely resembled the Windows of that time. In 2019, my first
+          challenge began when I started my bachelor's degree in Computer
+          Engineering at the University of Coimbra, where I learned a lot, and
+          after 3 years, I finally obtained the coveted title of Computer
+          Engineer. But I didn't stop there. Since I was a child, I always
+          enjoyed thinking outside the box, taking toys and using them in
+          unconventional ways. This often led to losing my toys, but it was a
+          thought process outside the norm that I now recognize as the reason
+          for my great interest in computer security. Security requires a lot of
+          creative and out-of-the-box thinking, so I decided to take on another
+          challenge, which is pursuing a master's degree in Information
+          Security, also at the University of Coimbra. And here I am, ...
+        </p>
+      </div>
+    </div>
+    <div id="modal-cv" class="modal-cv">
+        <embed class="modal-content-cv" src="CV.pdf"/>
+  </body>
+</html>
